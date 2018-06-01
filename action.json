@@ -1,0 +1,32 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "<INSERT YOUR CONVERSATION NAME HERE>"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to <INSERT YOUR NAME HERE>"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "<INSERT YOUR CONVERSATION NAME HERE>": {
+      "name": "<INSERT YOUR CONVERSATION NAME HERE>",
+      "url": "<INSERT YOUR FULLFILLMENT URL HERE>"
+    }
+  },
+  "locale": "en",
+  "versionLabel": "1.0",
+  "agentInfo": {
+    "languageCode": "en-US",
+    "projectId": "hello-world-205915",
+    "voiceName": "male_1"
+  }
+}
